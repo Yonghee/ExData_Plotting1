@@ -15,6 +15,7 @@ loadDataFile <- function(){
     #Date and Time column convert to Date/Column classes.
     tmpVect <-  apply(as.data.frame(resultData[1:2],stringsAsFactors=F),1, paste, collapse=" ")
     timeVect <-  strptime(tmpVect,"%d/%m/%Y %H:%M:%S")
+    
     resultData$Date <- as.Date(resultData$Date, format="%d/%m/%Y")
     
     #finaly getting tidy date set
