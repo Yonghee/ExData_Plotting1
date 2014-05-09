@@ -2,5 +2,12 @@
 source("./loadDataFile.R")
 
 myData <- loadDataFile()
-hist(myData$Global_active_power,col="red",xlab="Global Activity Power(Killowatts)",main="Global Activaty Power")
 
+#Draw Graph
+
+png("plot1.png",width=480, height=480)
+par(mfrow=c(1,1))
+hist(myData$Global_active_power,col="red",
+     xlab="Global Activity Power(killowatts)",
+     main="Global Activaty Power")
+dev.off()
