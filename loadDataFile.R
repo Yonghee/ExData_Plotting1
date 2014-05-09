@@ -2,7 +2,7 @@ loadDataFile <- function(){
     library(plyr)
     fileName <- "./data/household_power_consumption.txt"
     rawData <- read.csv(file = fileName, sep=";", header=T,stringsAsFactors=F)
-    
+     
     # subset data 
     resultData <- subset(rawData, Date=="1/2/2007" | Date=="2/2/2007")
     
