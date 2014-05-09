@@ -1,7 +1,8 @@
 Sys.setlocale("LC_TIME", "en_US.UTF-8")
 source("./loadDataFile.R")
-
+# loadDataFile function is defined in loadDataFile.R code file
 myData <- loadDataFile()
+
 png("plot2.png",width=480, height=480)
 par(mfrow=c(1,1))
 plot(myData$DateTime,myData$Global_active_power,

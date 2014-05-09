@@ -1,6 +1,6 @@
 Sys.setlocale("LC_TIME", "en_US.UTF-8")
 source("./loadDataFile.R")
-
+# loadDataFile function is defined in loadDataFile.R code file
 myData <- loadDataFile()
 
 png("plot3.png",width=480, height=480)

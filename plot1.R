@@ -1,6 +1,7 @@
 
 source("./loadDataFile.R")
 
+# loadDataFile function is defined in loadDataFile.R code file
 myData <- loadDataFile()
 
 #Draw Graph
