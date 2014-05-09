@@ -15,7 +15,7 @@ plot(myData$DateTime,myData$Voltage,type="l",xlab="datetime",ylab="Volage")
 plot(myData$DateTime,myData$Sub_metering_1,type="l",xlab="",ylab="Energe Sub Metering")
 lines(myData$DateTime,myData$Sub_metering_2,type="l",col="red")
 lines(myData$DateTime,myData$Sub_metering_3,type="l",col="blue")
-legend("topright",c("sub_metering_1","sub_metering_2","sub_metering_1"),col=c("black","red","blue"),lty="solid")
+legend("topright",c("sub_metering_1","sub_metering_2","sub_metering_3"),col=c("black","red","blue"),lty="solid")
 
 plot(myData$DateTime,myData$Global_reactive_power,type="l",xlab="datetime",ylab="Global_Reactive_Power")
 
